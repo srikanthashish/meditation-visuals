@@ -1,9 +1,29 @@
 # meditation-visuals
-This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals are sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. The EEG recordings consist of 5-minute-long deep meditation sessions, including columns for raw EEG scores, alpha, delta, gamma, low beta, high beta, and theta values, as well as pre-calculated attention and meditation scores (refer to **Table 1.**). These pre-calculated scores exist on separate 0-100 indeces (0 = _very_ low and 100 = _very_ high), representing the corresponding cognitive states' levels.
+This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals are sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. Files were renamed according to a unique naming convention which captures the date information, with the format YYYY-DD-MM for easy referencing.
 
 <tabcaption>
 
-<i><b>Table 1.</b> This table presents sample single-channel EEG recordings obtained from a healthy adult participant during a meditation session. The recordings are shown in the first three rows and represent a subset of the full dataset. Of particular interest are the pre-calculated attention and meditation scores, which are displayed in the eighth and ninth columns, respectively (marked with an asterisk, '__*__').</i>
+<i><b>Table 1.</b> Example filenames recorded in the [meditation-visuals_filenames.xlsx]() file.</i>
+
+</tabcaption>
+
+day	          | filename
+:-------------|:-------------
+1	            | 2023-03-07
+2	            | 2023-03-08
+3	            | 2023-03-09
+4	            | 2023-03-10
+5	            | 2023-03-11
+6	            | 2023-03-12
+7	            | 2023-03-13
+8	            | 2023-03-14
+9	            | 2023-03-15
+
+The EEG recordings consist of 5-minute-long deep meditation sessions, including columns for raw EEG scores, alpha, delta, gamma, low beta, high beta, and theta values, as well as pre-calculated attention and meditation scores (refer to **Table 2.**). These pre-calculated scores exist on separate 0-100 indeces (0 = _very_ low and 100 = _very_ high), representing the corresponding cognitive states' levels.
+
+<tabcaption>
+
+<i><b>Table 2.</b> This table presents sample single-channel EEG recordings obtained from a healthy adult participant during a meditation session. The recordings are shown in the first three rows and represent a subset of the full dataset. Of particular interest are the pre-calculated attention and meditation scores, which are displayed in the eighth and ninth columns, respectively (marked with an asterisk, '__*__').</i>
 
 </tabcaption>
 
