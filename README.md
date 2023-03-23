@@ -3,21 +3,21 @@ This repository comprises R scripts for visualizing electroencephalogram (EEG) r
 
 <tabcaption>
 
-<i><b>Table 1.</b> Example filenames recorded in the [meditation-visuals_filenames.xlsx]() file.</i>
+<i><b>Table 1.</b> Example filenames recorded in the [meditation-visuals_filenames.xlsx](input/meditation-visuals_filenames.xlsx) file.</i>
 
 </tabcaption>
 
 day	          | filename
 :-------------|:-------------
-1	            | 2023-03-07
-2	            | 2023-03-08
-3	            | 2023-03-09
-4	            | 2023-03-10
-5	            | 2023-03-11
-6	            | 2023-03-12
-7	            | 2023-03-13
-8	            | 2023-03-14
-9	            | 2023-03-15
+1	            | 2023-04-01
+2	            | 2023-04-02
+3	            | 2023-04-03
+4	            | 2023-04-04
+5	            | 2023-04-05
+6	            | 2023-04-06
+7	            | 2023-04-07
+8	            | 2023-04-08
+9	            | 2023-04-09
 
 The EEG recordings consist of 5-minute-long deep meditation sessions, including columns for raw EEG scores, alpha, delta, gamma, low beta, high beta, and theta values, as well as pre-calculated attention and meditation scores (refer to **Table 2.**). These pre-calculated scores exist on separate 0-100 indeces (0 = _very_ low and 100 = _very_ high), representing the corresponding cognitive states' levels.
 
@@ -40,9 +40,9 @@ This open-access repository provides two R scripts for visualizing nine successi
 1. [meditation-visuals_complete.R](meditation-visuals_complete.R) - generates 1 frame(s)-per-second (fps) and 6 fps animations for complete 5-minute-long deep meditation sessions for all nine sessions
 2. [meditation-visuals_minute-splits.R](meditation-visuals_minute-splits.R) - generates 1 fps and 6 fps animations for minute splits for all nine sessions
 
-Each script is executed to generate a sequence of single frame images, with each frame corresponding to a second of activity recorded. The frames were annotated with various recording metrics, including frame number, as well as an inverse visual representation of pre-calculated meditation scores. Specifically, squares are drawn within each frame, with larger squares corresponding to lower scores and smaller squares to higher scores (refer to Figure 1.2). These frames were subsequently arranged in sequential order and used to create animations in MP4 format. 
+Each script is executed to generate a sequence of single frame images, with each frame corresponding to a second of activity recorded. The frames were annotated with various recording metrics, including frame number, as well as an inverse visual representation of pre-calculated meditation scores. Specifically, squares are drawn within each frame, with larger squares corresponding to lower scores and smaller squares to higher scores (refer to Figure 1.1). These frames were subsequently arranged in sequential order and used to create animations in MP4 format. 
 
-In the final step of this data visualization exercise, the animations generated for each of the nine days of meditation were tiled into a 3×3 grid (refer to Figure 1.3). This visualization technique enabled a comprehensive view of participants' meditation performance, facilitating the side-by side comparison of sessions and identification of trends and patterns over time. By employing this method, we were able to examine the duration and frequency of specific states (e.g., time spent in a given session with a score above 60, labelled with the annotation _Dhyāna_, the Sanskrit word for meditation, loosely defined as "one pointedness of the mind").
+In the final step of this data visualization exercise, the animations generated for each of the nine days of meditation were tiled into a 3×3 grid (refer to Figure 1.2). This visualization technique enabled a comprehensive view of participants' meditation performance, facilitating the side-by side comparison of sessions and identification of trends and patterns over time. By employing this method, we were able to examine the duration and frequency of specific states (e.g., time spent in a given session with a score above 60, labelled with the annotation _Dhyāna_, the Sanskrit word for meditation, loosely defined as "one pointedness of the mind").
 
 ## Requirements
 Users must pre-install R software on their local computer. The necessary packages may be installed through the execution of the following terminal commands:
