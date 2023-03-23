@@ -20,7 +20,7 @@ library(dplyr)
 library(av)
 
 # Create image directory --------------------------------------------------
-img_dir <- "brain-art/"
+img_dir <- "meditation-visuals/"
 img_subdir <- "img/"
 img_path <- paste0(img_dir, img_subdir, "/", sep = "")
 
@@ -39,7 +39,7 @@ for (d in 1:length(med_fn_list[["day"]])) {
   # Read XLSX file for meditation data --------------------------------------
   med_data_file = paste0(
     # Make sure to update this path!
-    "<path to .../brain-art/input/>",
+    "<path to .../meditation-visuals/input/>",
     gsub("UTC", "_", med_fn_list[["filename"]][d]),
     ".xlsx"
   )
