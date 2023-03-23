@@ -3,11 +3,11 @@
 # Description: This repository contains R scripts that replicate the animated figures
 # generated in a personal project focused on processing electroencephalographic (EEG)
 # recording files acquired via the BrainCo Inc. FocusCalm Headband, a non-invasive
-# neuroimaging device. 
+# neuroimaging device.
 
-# The primary objective of the project was to improve understanding of the neural 
-# underpinnings of meditation practices, as applied to the personal experiences of the author. 
-# The scripts enable replication of the analysis methods employed in generating the animated 
+# The primary objective of the project was to improve understanding of the neural
+# underpinnings of meditation practices, as applied to the personal experiences of the author.
+# The scripts enable replication of the analysis methods employed in generating the animated
 # figures, facilitating future efforts for visualizing surface-level brain activity during meditation.
 
 # View the project on GitHub: https://github.com/srikanthashish/meditation-visuals
@@ -27,7 +27,7 @@ dir.create("figs")
 
 # Read XLSX file from list of file names ----------------------------------
 # Make sure to update this path!
-med_fn_file = "input/meditation-visual_filenames.xlsx"
+med_fn_file = "input/meditation-visuals_filenames.xlsx"
 med_fn <- data.frame(read_excel(med_fn_file))
 med_fn_list = as.list(med_fn)
 
@@ -571,10 +571,9 @@ for (d in 1:length(med_fn_list[["day"]])) {
       )
     )
     file.remove(list.files(pattern = ".png"))
-    print(paste0(
-      "Saved frames for animated visual of ",
+    print(
       paste0(
-        "minute ",
+        "Saved frames for animated visual of minute ",
         min,
         " of ",
         length(med_data_list[["Meditation"]]) / 60,
@@ -583,6 +582,6 @@ for (d in 1:length(med_fn_list[["day"]])) {
         ").",
         sep = ""
       )
-    ))
+    )
   }
 }
