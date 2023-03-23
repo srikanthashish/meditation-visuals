@@ -36,6 +36,9 @@ install.packages("dplyr")
 
 # For working with audio & video
 install.packages("av")
+
+# For working with Google fonts
+install.packages("gfonts")
 ```
 
 It is also recommended that the repository be cloned using the command:
