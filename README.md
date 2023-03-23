@@ -23,7 +23,7 @@ The EEG recordings consist of 5-minute-long deep meditation sessions, including 
 
 <tabcaption>
 
-<i><b>Table 2.</b> This table presents sample single-channel EEG recordings obtained from a healthy adult participant during a meditation session. The recordings are shown in the first three rows and represent a subset of the full dataset. Of particular interest are the pre-calculated attention and meditation scores, which are displayed in the eighth and ninth columns, respectively (marked with an asterisk, '__*__').</i>
+<i><b>Table 2.</b> This table presents sample single-channel EEG recordings obtained from a healthy adult participant during a meditation session. The recordings are shown in the first three (of 300) rows and represent a subset of the full dataset. Of particular interest are the pre-calculated attention and meditation scores, which are displayed in the eighth and ninth columns, respectively (both are marked with an asterisk, '__*__').</i>
 
 </tabcaption>
 
