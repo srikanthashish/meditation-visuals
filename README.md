@@ -17,8 +17,8 @@ EEG	          | alpha	       | delta	      | gamma	       | low_beta	    | high_
 ## Contents
 This open-access repository provides two R scripts for visualizing nine successive days of Hindu Vedic meditation:
 
-1. [meditation-visuals_complete.R]() - generates 1 frame(s)-per-second (fps) and 6 fps animations for complete 5-minute-long deep meditation sessions for all nine sessions
-2. [meditation-visuals_minute-splits.R]() - generates 1 fps and 6 fps animations for minute splits for all nine sessions
+1. [meditation-visuals_complete.R](meditation-visuals_complete.R) - generates 1 frame(s)-per-second (fps) and 6 fps animations for complete 5-minute-long deep meditation sessions for all nine sessions
+2. [meditation-visuals_minute-splits.R](meditation-visuals_minute-splits.R) - generates 1 fps and 6 fps animations for minute splits for all nine sessions
 
 Each script is executed to generate a sequence of single frame images, with each frame corresponding to a second of activity recorded. The frames were annotated with various recording metrics, including frame number, as well as an inverse visual representation of pre-calculated meditation scores. Specifically, squares are drawn within each frame, with larger squares corresponding to lower scores and smaller squares to higher scores (refer to Figure 1.2). These frames were subsequently arranged in sequential order and used to create animations in MP4 format. 
 
