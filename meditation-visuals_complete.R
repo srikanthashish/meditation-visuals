@@ -1,7 +1,13 @@
 # Author: Ashish Srikanth
 # Title: Meditation Visuals (Complete)
-# Description: This R script replicates the figures from a personal project
-# for processing EEG recording files obtained from the BrainCo Inc. FocusCalm Headband.
+# Description: This repository contains R scripts that replicate the animated figures 
+# generated in a personal project focused on processing electroencephalographic (EEG) 
+# recording files acquired via the BrainCo Inc. FocusCalm Headband, a non-invasive 
+# neuroimaging device. The primary objective of the project was to improve understanding
+# of the neural underpinnings of meditation practices, as applied to the personal 
+# experiences of the author. The scripts enable replication of the analysis methods 
+# employed in generating the animated figures, facilitating future investigations 
+#into the EEG correlates of meditation.
 
 # View the project on GitHub: https://github.com/srikanthashish/meditation-visuals
 
