@@ -42,7 +42,13 @@ This open-access repository provides two R scripts for visualizing nine successi
 
 Note that both scripts loop through the predefined list of filenames to process all nine 5-minute-long deep meditation sessions in one run. As a result, 18 [MP4](https://en.wikipedia.org/wiki/MP4_file_format) files are produced in the [meditation-visuals_complete.R](meditation-visuals_complete.R) script (2 videos/session × 9 sessions) and 90 [MP4](https://en.wikipedia.org/wiki/MP4_file_format) files are produced in the [meditation-visuals_minute-splits.R](meditation-visuals_minute-splits.R) script (10 videos/session × 9 sessions).
 
-Each script is executed to generate a sequence of single frame images, with each frame corresponding to a second of activity recorded. The frames were annotated with various recording metrics, including frame number, as well as an inverse visual representation of pre-calculated meditation scores. Specifically, squares are drawn within each frame, with larger squares corresponding to lower scores and smaller squares to higher scores (refer to Figure 1.1). These frames were subsequently arranged in sequential order and used to create animations in [MP4](https://en.wikipedia.org/wiki/MP4_file_format) coding format. 
+Each script is executed to generate a sequence of single frame images, with each frame corresponding to a second of activity recorded. The frames were annotated with various recording metrics, including frame number, as well as an inverse visual representation of pre-calculated meditation scores. Specifically, squares are drawn within each frame, with larger squares corresponding to lower scores and smaller squares to higher scores (refer to Figure 1.1.). These frames were subsequently arranged in sequential order and used to create animations in [MP4](https://en.wikipedia.org/wiki/MP4_file_format) coding format. 
+
+<p align="center">
+  <img src="demo_figs/med_rec_min-1_demo_animated_6_fps.gif" alt="" width=300 height=300/>
+</p>
+
+<i><b>Figure 1.1.</b> 6 FPS GIF animation of minute 1 of a meditation visual, generated using demo data. </i>
 
 In the final step of this data visualization exercise, the animations generated for each of the nine days of meditation were tiled into a 3 × 3 grid (refer to Figure 1.2). This visualization technique enabled a comprehensive view of participants' meditation performance, facilitating the side-by side comparison of sessions and identification of trends and patterns over time. By employing this method, we were able to examine the duration and frequency of specific states (e.g., time spent in a given session with a score above 60, labelled with the annotation _Dhyāna_, the Sanskrit word for meditation, loosely defined as "one pointedness of the mind").
 
