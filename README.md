@@ -1,9 +1,9 @@
 # Meditation Visuals
-This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals were sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. During the data collection process, a [guided meditation audio track](stimuli/vedic-meditation/432Hz_Om-chanting.mp3) in [MP3](https://en.wikipedia.org/wiki/MP3) coding format was played for the wearer of the FocusCalm Headband via wireless [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) headphones. Default 'output.xlsx' files were renamed according to a convention with the format <code>ses-</code> followed by the session number with Python indexing (e.g., session 1 would be <code>ses-00</code>), to capture the session number and permit easier file referencing (refer to **Table 1.** for an example of a completed table).
+This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals were sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. During the data collection process, a [guided meditation audio track](stimuli/vedic-meditation/432Hz_Om-chanting.mp3) in [MP3](https://en.wikipedia.org/wiki/MP3) coding format was played for the wearer of the FocusCalm Headband via wireless [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) headphones. Default 'output.xlsx' files were renamed according to a convention with the format <code>ses-</code> followed by the session number with Python indexing (e.g., session 1 would be <code>ses-00</code>), to capture the session number and permit easier file referencing (refer to _**Table 1.**_ for an example of a completed table).
 
 <tabcaption>
 
-<i><b>Table 1.</b> Example filenames recorded in the [meditation-visuals_filenames.xlsx](input/meditation-visuals_filenames.xlsx) file.</i>
+<i>**Table 1.** Example filenames recorded in the [meditation-visuals_filenames.xlsx](input/meditation-visuals_filenames.xlsx) file.</i>
 
 </tabcaption>
 
@@ -23,7 +23,7 @@ The EEG recordings consist of 5-minute-long deep meditation sessions, including 
 
 <tabcaption>
 
-<i><b>Table 2.</b> This table presents sample single-channel EEG recordings obtained from a healthy adult participant during a meditation session. The recordings are shown in the first three (of 300) rows and represent a subset of the full dataset. Of particular interest are the pre-calculated attention and meditation scores, which are displayed in the eighth and ninth columns, respectively (both are marked with an asterisk, '__*__').</i>
+<i>**Table 2.** This table presents sample single-channel EEG recordings obtained from a healthy adult participant during a meditation session. The recordings are shown in the first three (of 300) rows and represent a subset of the full dataset. Of particular interest are the pre-calculated attention and meditation scores, which are displayed in the eighth and ninth columns, respectively (both are marked with an asterisk, '__*__').</i>
 
 </tabcaption>
 
@@ -48,7 +48,7 @@ Each script is executed to generate a sequence of single frame images, with each
   <img src="demo_figs/med_rec_min-1_demo_animated_6_fps.gif" alt="" width=300 height=300/>
 </p>
 
-<i><b>Figure 1.</b> 6 FPS GIF animation of minute 1 of a meditation visual, generated using demo data. View the [demo_figs](demo_figs) folder for more example GIF animations.</i>
+<i>**Figure 1.** 6 FPS GIF animation of minute 1 of a meditation visual, generated using demo data. View the [demo_figs](demo_figs) folder for more example GIF animations.</i>
 
 In the final step of this data visualization exercise, the animations generated for each of the nine sessions of meditation were tiled into a 3 × 3 grid. This visualization technique enabled a comprehensive view of participants' meditation performance, facilitating the side-by side comparison of sessions and identification of trends and patterns over time. By employing this method, we were able to examine the duration and frequency of specific states (e.g., time spent in a given session with a score above 60, labelled with the annotation _Dhyāna_, the Sanskrit word for meditation, loosely defined as "one pointedness of the mind").
 
