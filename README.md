@@ -1,5 +1,5 @@
 # Meditation Visuals
-This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals were sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. During the data collection process, a [guided meditation audio track](stimuli/vedic-meditation/432Hz_Om-chanting.mp3) in [MP3](https://en.wikipedia.org/wiki/MP3) coding format was played for the wearer of the FocusCalm Headband via wireless [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) headphones. Default 'output.xlsx' files were renamed according to a convention with the format YYYY-MM-DD, to capture the date information and permit easier file referencing (refer to **Table 1.** for an example of a completed table).
+This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals were sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. During the data collection process, a [guided meditation audio track](stimuli/vedic-meditation/432Hz_Om-chanting.mp3) in [MP3](https://en.wikipedia.org/wiki/MP3) coding format was played for the wearer of the FocusCalm Headband via wireless [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) headphones. Default 'output.xlsx' files were renamed according to a convention with the format <code>ses-</code> followed by the session number with Python indexing (e.g., session 1 would be <code>ses-00</code>), to capture the session number and permit easier file referencing (refer to **Table 1.** for an example of a completed table).
 
 <tabcaption>
 
@@ -7,17 +7,17 @@ This repository comprises R scripts for visualizing electroencephalogram (EEG) r
 
 </tabcaption>
 
-day	          | filename
+session	      | filename
 :-------------|:-------------
-1	            | 2023-04-01
-2	            | 2023-04-02
-3	            | 2023-04-03
-4	            | 2023-04-04
-5	            | 2023-04-05
-6	            | 2023-04-06
-7	            | 2023-04-07
-8	            | 2023-04-08
-9	            | 2023-04-09
+1	            | ses-00
+2	            | ses-01
+3	            | ses-02
+4	            | ses-03
+5	            | ses-04
+6	            | ses-05
+7	            | ses-06
+8	            | ses-07
+9	            | ses-08
 
 The EEG recordings consist of 5-minute-long deep meditation sessions, including columns for raw EEG scores, alpha, delta, gamma, low beta, high beta, and theta values, as well as pre-calculated attention and meditation scores (refer to **Table 2.**). These pre-calculated scores exist on separate 0-100 indeces (0 = _very_ low and 100 = _very_ high), representing the corresponding cognitive states' levels.
 
@@ -35,7 +35,7 @@ EEG	          | alpha	       | delta	      | gamma	       | low_beta	    | high_
 . . .	        | . . .	       | . . .	      | . . .	       | . . .	      | . . .	       | . . .	      | . . .	       | . . .
 
 ## Contents
-This open-access repository provides two R scripts for visualizing nine successive days of Hindu Vedic meditation:
+This open-access repository provides two R scripts for visualizing nine sessions of Hindu Vedic meditation:
 
 1. [meditation-visuals_complete.R](meditation-visuals_complete.R) - generates a 1 Frame(s)-Per-Second (FPS) and a 6 FPS **complete** 300-frame-long animation for the complete duration of a 5-minute-long deep meditation session
 2. [meditation-visuals_minute-splits.R](meditation-visuals_minute-splits.R) - generates a 1 FPS and 6 FPS **minute splits** 60-frame-long animation for every minute of a 5-minute-long deep meditation session
@@ -50,7 +50,7 @@ Each script is executed to generate a sequence of single frame images, with each
 
 <i><b>Figure 1.</b> 6 FPS GIF animation of minute 1 of a meditation visual, generated using demo data. </i>
 
-In the final step of this data visualization exercise, the animations generated for each of the nine days of meditation were tiled into a 3 × 3 grid. This visualization technique enabled a comprehensive view of participants' meditation performance, facilitating the side-by side comparison of sessions and identification of trends and patterns over time. By employing this method, we were able to examine the duration and frequency of specific states (e.g., time spent in a given session with a score above 60, labelled with the annotation _Dhyāna_, the Sanskrit word for meditation, loosely defined as "one pointedness of the mind").
+In the final step of this data visualization exercise, the animations generated for each of the nine sessions of meditation were tiled into a 3 × 3 grid. This visualization technique enabled a comprehensive view of participants' meditation performance, facilitating the side-by side comparison of sessions and identification of trends and patterns over time. By employing this method, we were able to examine the duration and frequency of specific states (e.g., time spent in a given session with a score above 60, labelled with the annotation _Dhyāna_, the Sanskrit word for meditation, loosely defined as "one pointedness of the mind").
 
 ## Requirements
 Users must pre-install R software on their local computer. The necessary packages may be installed through the execution of the following terminal commands:
