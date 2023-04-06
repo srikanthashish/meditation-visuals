@@ -48,7 +48,7 @@ Each script is executed to generate a sequence of single frame images, with each
   <img src="demo_figs/med_rec_min-1_demo_animated_6_fps.gif" alt="" width=300 height=300/>
 </p>
 
-<i><b>Figure 1.</b> 6 FPS GIF animation of minute 1 of a meditation visual, generated using demo data. View the <code>demo_figs</code> folder for more example GIF animations.</i>
+<i><b>Figure 1.</b> 6 FPS GIF animation of minute 1 of a meditation visual, generated using demo data. View the [demo_figs](demo_figs) folder for more example GIF animations.</i>
 
 In the final step of this data visualization exercise, the animations generated for each of the nine sessions of meditation were tiled into a 3 × 3 grid. This visualization technique enabled a comprehensive view of participants' meditation performance, facilitating the side-by side comparison of sessions and identification of trends and patterns over time. By employing this method, we were able to examine the duration and frequency of specific states (e.g., time spent in a given session with a score above 60, labelled with the annotation _Dhyāna_, the Sanskrit word for meditation, loosely defined as "one pointedness of the mind").
 
