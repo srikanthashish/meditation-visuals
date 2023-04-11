@@ -77,4 +77,4 @@ It is also recommended that the repository be cloned using the command:
 git clone https://github.com/srikanthashish/meditation-visuals.git
 ```
 
-![footer](https://user-images.githubusercontent.com/29677962/231225496-c0f23cd2-9ea0-4ed8-aa5a-039099c540d7.png)
+![footer02](https://user-images.githubusercontent.com/29677962/231235142-65a6eadb-0b17-4daf-bc56-bd31934acf67.png)
