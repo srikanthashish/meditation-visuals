@@ -1,3 +1,5 @@
+![header](https://user-images.githubusercontent.com/29677962/231180653-ad8ae818-fc8e-4a69-b8a4-9af1e7fdbd61.png)
+
 # Meditation Visuals
 This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals were sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. During the data collection process, a [guided meditation audio track](stimuli/vedic-meditation/432Hz_Om-chanting.mp3) in [MP3](https://en.wikipedia.org/wiki/MP3) coding format was played for the wearer of the FocusCalm Headband via wireless [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) headphones. Default 'output.xlsx' files were renamed according to a convention with the format <code>ses-</code> followed by the session number with Python indexing (e.g., session 1 would be <code>ses-00</code>), to capture the session number and permit easier file referencing (refer to _**Table 1.**_ for an example of a completed table).
 
@@ -74,3 +76,5 @@ It is also recommended that the repository be cloned using the command:
 ```bash
 git clone https://github.com/srikanthashish/meditation-visuals.git
 ```
+
+![footer](https://user-images.githubusercontent.com/29677962/231181155-8350aee8-8867-4851-944b-33e30978025c.png)
