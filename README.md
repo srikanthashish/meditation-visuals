@@ -71,7 +71,9 @@ install.packages("av")
 install.packages("gfonts")
 ```
 
-The <code>ffmpeg-python</code> Python library and <code>ffmpeg-python</code> wrapper is used to stitch the 6 fps animated visuals in a 3 × 3 tiled video mosaic MP4 file. You can install the library using the following command in <code>bash</code>:
+The <code>ffmpeg</code> Python library and overlaying <code>ffmpeg-python</code> wrapper is used to stitch the 6 fps animated visuals in a 3 × 3 tiled video mosaic MP4 file. 
+
+You can install the library using the following command in <code>bash</code>:
 
 ```bash
 pip install ffmpeg
