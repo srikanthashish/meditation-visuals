@@ -55,7 +55,7 @@ Each script is executed to generate a sequence of single frame images, with each
 In the final step of this data visualization exercise, the animations generated for each of the nine sessions of meditation were tiled into a 3 × 3 grid. This visualization technique enabled a comprehensive view of participants' meditation performance, facilitating the side-by side comparison of sessions and identification of trends and patterns over time. By employing this method, we were able to examine the duration and frequency of specific states (e.g., time spent in a given session with a score above 60, labelled with the annotation _Dhyāna_, the Sanskrit word for meditation, loosely defined as "one pointedness of the mind").
 
 ## Requirements
-Users must pre-install R software on their local computer. The necessary packages may be installed through the execution of the following terminal commands:
+Users must pre-install R software on their local computer. The necessary packages may be installed through the execution of the following terminal commands in the _RStudio_ programming interface:
 
 ```R
 # For reading Excel files
@@ -73,7 +73,7 @@ install.packages("gfonts")
 
 The <code>ffmpeg</code> Python library and overlaying <code>ffmpeg-python</code> wrapper is used to stitch the 6 fps animated visuals in a 3 × 3 tiled video mosaic MP4 file. 
 
-You can install the library using the following command in <code>bash</code>:
+You can install the library using the following command in _bash_:
 
 ```bash
 pip install ffmpeg
@@ -85,7 +85,7 @@ To download the wrapper for more advanced filtering functions:
 pip install ffmpeg-python
 ```
 
-For ease of use, it is also recommended that the repository be cloned using the following <code>bash</code> command:
+For ease of use, it is also recommended that the repository be cloned using the following _bash_ command:
 
 ```bash
 git clone https://github.com/srikanthashish/meditation-visuals.git
