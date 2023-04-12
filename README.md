@@ -71,7 +71,19 @@ install.packages("av")
 install.packages("gfonts")
 ```
 
-It is also recommended that the repository be cloned using the command:
+The <code>ffmpeg-python</code> Python library and <code>ffmpeg-python</code> wrapper is used to stitch the 6 fps animated visuals in a 3 × 3 tiled video mosaic MP4 file. You can install the library using the following command in <code>bash</code>:
+
+```bash
+pip install ffmpeg
+```
+
+To download the wrapper for more advanced filtering functions:
+
+```bash
+pip install ffmpeg-python
+```
+
+For ease of use, it is also recommended that the repository be cloned using the following <code>bash</code> command:
 
 ```bash
 git clone https://github.com/srikanthashish/meditation-visuals.git
