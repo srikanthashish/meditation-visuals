@@ -113,7 +113,7 @@ This will produce four (4) additional figures in the following order (examples o
   <img src="demo_figs/med_rec_complete_animated_6_fps_DEMO.gif" alt="" width=300 height=300/>
 </p>
 
-<i>**Figure 2.** 6 FPS GIF animation of the first few seconds of a 3 × 3 tiling meditation visual, generated using demo data.</i>
+<i>**Figure 2.** 6 FPS GIF animation of the first 36 seconds of a 3 × 3 tiling meditation visual, generated using demo data.</i>
 
 To conclude, this activty is intended to be a valuable exercise in the processing and visualization of EEG data. By leveraging various libraries in R and bash programming, we can load data recorded in Microsoft Excel format, create frames for second-by-second meditation activity, and compile them into a fun animated visual!
 
