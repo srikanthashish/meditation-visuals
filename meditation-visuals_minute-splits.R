@@ -40,10 +40,10 @@ setup_font(id = "poppins",
 use_font("poppins", "fonts/css/poppins.css")
 
 # Loop through code to process data for all sessions in a list ------------
-for (d in 1:length(med_fn_list[["day"]])) {
+for (d in 1:length(med_fn_list[["session"]])) {
   # Note: 'Day' number corresponds to the 'session' number, since
   # each recording was obtained once a day during the morning hours
-  day_label = paste0("DAY ", med_fn_list[["day"]][d], "/", length(med_fn_list[["day"]]))
+  day_label = paste0("DAY ", med_fn_list[["session"]][d], "/", length(med_fn_list[["session"]]))
   
   # Read XLSX file for meditation data --------------------------------------
   med_data_file = paste0(# Make sure to update this path!
@@ -85,8 +85,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
           file = paste0(
             "med_rec_00",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png",
             sep = ""
           ),
@@ -101,8 +101,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
           file = paste0(
             "med_rec_0",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png",
             sep = ""
           ),
@@ -117,8 +117,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
           file = paste0(
             "med_rec_0",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png",
             sep = ""
           ),
@@ -133,8 +133,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
           file = paste0(
             "med_rec_",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png",
             sep = ""
           ),
@@ -149,8 +149,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
           file = paste0(
             "med_rec_",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png",
             sep = ""
           ),
@@ -240,7 +240,7 @@ for (d in 1:length(med_fn_list[["day"]])) {
         }
         # Change background color to black if meditation score is low (<60)
         if (as.numeric(med_data_list[["Meditation"]][b]) < 60) {
-          par(bg = "#121212", mar = c(0, 0, 0, 0))
+          par(bg = "#0D1117", mar = c(0, 0, 0, 0))
           plot(
             0,
             0,
@@ -256,7 +256,7 @@ for (d in 1:length(med_fn_list[["day"]])) {
           grid(
             nx = NULL,
             ny = NULL,
-            col = "#333333",
+            col = "#21262D",
             lwd = 1
           )
           title(
@@ -307,7 +307,9 @@ for (d in 1:length(med_fn_list[["day"]])) {
               min,
               " OF ",
               length(med_data_list[["Meditation"]]) / 60,
-              ")",
+              ") ",
+              "| SES. ",
+              d,
               sep = ""
             ),
             cex.main = 0.45,
@@ -329,7 +331,9 @@ for (d in 1:length(med_fn_list[["day"]])) {
               min,
               " OF ",
               length(med_data_list[["Meditation"]]) / 60,
-              ")",
+              ") ",
+              "| SES. ",
+              d,
               sep = ""
             ),
             cex.main = 0.45,
@@ -351,7 +355,9 @@ for (d in 1:length(med_fn_list[["day"]])) {
               min,
               " OF ",
               length(med_data_list[["Meditation"]]) / 60,
-              ")",
+              ") ",
+              "| SES. ",
+              d,
               sep = ""
             ),
             cex.main = 0.45,
@@ -372,7 +378,9 @@ for (d in 1:length(med_fn_list[["day"]])) {
               min,
               " OF ",
               length(med_data_list[["Meditation"]]) / 60,
-              ")",
+              ") ",
+              "| SES. ",
+              d,
               sep = ""
             ),
             cex.main = 0.45,
@@ -393,7 +401,9 @@ for (d in 1:length(med_fn_list[["day"]])) {
               min,
               " OF ",
               length(med_data_list[["Meditation"]]) / 60,
-              ")",
+              ") ",
+              "| SES. ",
+              d,
               sep = ""
             ),
             cex.main = 0.45,
@@ -423,8 +433,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
             length(med_data_list[["Meditation"]]),
             " (file: med_rec_",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png | session: ",
             d,
             ").",
@@ -441,8 +451,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
             length(med_data_list[["Meditation"]]),
             " (file: med_rec_",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png | session: ",
             d,
             ").",
@@ -459,8 +469,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
             length(med_data_list[["Meditation"]]),
             " (file: med_rec_",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png | session: ",
             d,
             ").",
@@ -477,8 +487,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
             length(med_data_list[["Meditation"]]),
             " (file: med_rec_",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png | session: ",
             d,
             ").",
@@ -495,8 +505,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
             length(med_data_list[["Meditation"]]),
             " (file: med_rec_",
             b,
-            "_",
-            tools::file_path_sans_ext(basename(med_data_file)),
+            "_ses-0",
+            d,
             ".png | session: ",
             d,
             ").",
@@ -521,8 +531,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
         length(med_data_list[["Meditation"]]) / 60,
         " (file: med_rec_min-",
         min,
-        "_",
-        tools::file_path_sans_ext(basename(med_data_file)),
+        "_ses-0",
+        d,
         ".mp4)",
         "...",
         sep = ""
@@ -534,8 +544,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
       output = paste0(
         "figs/med_rec_min-",
         min,
-        "_",
-        tools::file_path_sans_ext(basename(med_data_file)),
+        "_ses-0",
+        d,
         "_animated_",
         fps_01,
         "_fps.mp4",
@@ -548,8 +558,8 @@ for (d in 1:length(med_fn_list[["day"]])) {
       output = paste0(
         "figs/med_rec_min-",
         min,
-        "_",
-        tools::file_path_sans_ext(basename(med_data_file)),
+        "_ses-0",
+        d,
         "_animated_",
         fps_02,
         "_fps.mp4",
