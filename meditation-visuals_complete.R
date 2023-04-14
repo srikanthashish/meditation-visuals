@@ -284,7 +284,7 @@ for (d in 1:length(med_fn_list[["session"]])) {
               b,
               "/",
               length(med_data_list[["Meditation"]]),
-              ") ",
+              " ",
               "| SES. ",
               d,
               sep = ""
@@ -304,7 +304,7 @@ for (d in 1:length(med_fn_list[["session"]])) {
               b,
               "/",
               length(med_data_list[["Meditation"]]),
-              ") ",
+              " ",
               "| SES. ",
               d,
               sep = ""
@@ -324,7 +324,7 @@ for (d in 1:length(med_fn_list[["session"]])) {
               b,
               "/",
               length(med_data_list[["Meditation"]]),
-              ") ",
+              " ",
               "| SES. ",
               d,
               sep = ""
@@ -343,7 +343,7 @@ for (d in 1:length(med_fn_list[["session"]])) {
               b,
               "/",
               length(med_data_list[["Meditation"]]),
-              ") ",
+              " ",
               "| SES. ",
               d,
               sep = ""
@@ -362,7 +362,7 @@ for (d in 1:length(med_fn_list[["session"]])) {
               b,
               "/",
               length(med_data_list[["Meditation"]]),
-              ") ",
+              " ",
               "| SES. ",
               d,
               sep = ""
