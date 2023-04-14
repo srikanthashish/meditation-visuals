@@ -103,7 +103,7 @@ After navigating to the <code>meditation-visuals/</code> on your computer, run t
 bash 3x3_tiling.sh
 ```
 
-This will produce four (4) additional figures in the following order: 
+This will produce four (4) additional figures in the following order (examples of each can be found in the [figs/](figs) folder): 
 1. a 3 × 3 tiling of the nine 6 fps animated visuals (in MP4 format), 
 2. a 3 × 3 tiling of the nine 6 fps animated visuals (in GIF format; refer to **Figure 2.**), 
 3. a 3 × 3 tiling of the nine 1 fps animated visuals WITHOUT the 5-minute-long meditation audio track (in MP4 format), and
