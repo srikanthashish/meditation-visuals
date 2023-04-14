@@ -13,7 +13,7 @@ ffmpeg -i "figs/med_rec_complete_ses-01_animated_6_fps.mp4" \
 
 # Convert the 3x3 tiling of the nine 6 fps animated visuals to GIF format
 ffmpeg -ss 0 -t 6 -i "figs/med_rec_complete_animated_6_fps.mp4" \
-    -vf "fps=6,scale=3840:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
+    -vf "fps=6,scale=2160:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
     -loop 0 "figs/med_rec_complete_animated_6_fps.gif"
 
 # Create 3x3 tiling of the nine 1 fps animated visuals
