@@ -97,7 +97,7 @@ git clone https://github.com/srikanthashish/meditation-visuals.git
 
 Once the dynamic visuals are generated for each of the nine sessions, it can be exciting to look at them side by side! 
 
-After navigating to the <code>meditation-visuals/</code> on your computer, run the <code>3 × 3_tiling.sh</code> bash script:
+After navigating to the <code>meditation-visuals/</code> on your computer, run the <code>3x3_tiling.sh</code> bash script:
 
 ```bash
 bash 3x3_tiling.sh
