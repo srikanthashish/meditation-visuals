@@ -1,7 +1,7 @@
 ![header01](https://user-images.githubusercontent.com/29677962/231225422-6b1dc0db-1423-43cf-bf13-41c8b657acaa.png)
 
 # Meditation Visuals
-This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals were sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. During the data collection process, a [guided meditation audio track](stimuli/vedic-meditation/432Hz_Om-chanting.mp3) in [MP3](https://en.wikipedia.org/wiki/MP3) coding format was played for the wearer of the FocusCalm Headband via wireless [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) headphones. Default 'output.xlsx' files were renamed according to a convention with the format <code>ses-</code> followed by the session number with Python indexing (e.g., session 1 would be <code>ses-00</code>), to capture the session number and permit easier file referencing (refer to _**Table 1.**_ for an example of a completed table).
+This repository comprises R scripts for visualizing electroencephalogram (EEG) recordings acquired via the [BrainCo Inc. FocusCalm Headband](https://focuscalm.com/products/focuscalm-eeg-headband), a non-invasive neuroimaging device. EEG signals were sampled at a frequency of 1 Hz using the [NeuroMaker BCI Connect](https://bci-connect.neuromakerstem.com/) web application and saved in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) file format. During the data collection process, a [guided meditation audio track](stimuli/vedic-meditation/432Hz_Om-chanting.mp3) in [MP3](https://en.wikipedia.org/wiki/MP3) coding format was played for the wearer of the FocusCalm Headband via wireless [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) headphones. Default 'output.xlsx' files were renamed according to a convention with the format <code>ses-</code> followed by the session number (e.g., session 1 would be <code>ses-00</code>), to capture the session number and permit easier file referencing (refer to _**Table 1.**_ for an example of a completed table).
 
 <tabcaption>
 
@@ -11,15 +11,15 @@ This repository comprises R scripts for visualizing electroencephalogram (EEG) r
 
 session	      | filename
 :-------------|:-------------
-1	            | ses-00
-2	            | ses-01
-3	            | ses-02
-4	            | ses-03
-5	            | ses-04
-6	            | ses-05
-7	            | ses-06
-8	            | ses-07
-9	            | ses-08
+1	            | 2023-04-14_ses-01
+2	            | 2023-04-14_ses-02
+3	            | 2023-04-14_ses-03
+4	            | 2023-04-14_ses-04
+5	            | 2023-04-14_ses-05
+6	            | 2023-04-14_ses-06
+7	            | 2023-04-14_ses-07
+8	            | 2023-04-14_ses-08
+9	            | 2023-04-14_ses-09
 
 The EEG recordings consist of 5-minute-long deep meditation sessions, including columns for raw EEG scores, alpha, delta, gamma, low beta, high beta, and theta values, as well as pre-calculated attention and meditation scores (refer to **Table 2.**). These pre-calculated scores exist on separate 0-100 indeces (0 = _very_ low and 100 = _very_ high), representing the corresponding cognitive states' levels.
 
@@ -47,7 +47,7 @@ Note that both scripts loop through the predefined list of filenames to process 
 Each script is executed to generate a sequence of single frame images, with each frame corresponding to a second of activity recorded. The frames were annotated with various recording metrics, including frame number, as well as an inverse visual representation of pre-calculated meditation scores. Specifically, squares are drawn within each frame, with larger squares corresponding to lower scores and smaller squares to higher scores (refer to **Figure 1.**). These frames were subsequently arranged in sequential order and used to create animations in [MP4](https://en.wikipedia.org/wiki/MP4_file_format) coding format. 
 
 <p align="center">
-  <img src="demo_figs/med_rec_min-1_demo_animated_6_fps.gif" alt="" width=300 height=300/>
+  <img src="demo_figs/med_rec_complete_ses-01_animated_6_fps_DEMO.gif" alt="" width=300 height=300/>
 </p>
 
 <i>**Figure 1.** 6 FPS GIF animation of minute 1 of a meditation visual, generated using demo data. View the [demo_figs/](demo_figs) folder for more example GIF animations.</i>
@@ -71,9 +71,9 @@ install.packages("av")
 install.packages("gfonts")
 ```
 
-The <code>ffmpeg</code> Python library and overlaying <code>ffmpeg-python</code> wrapper is used to stitch the 6 fps animated visuals in a 3 × 3 tiled video mosaic MP4 file. 
+The <code>ffmpeg</code> library and overlaying <code>ffmpeg-python</code> wrapper is used to stitch the 6 fps animated visuals in a 3 × 3 tiled video mosaic MP4 file. 
 
-You can install the library using the following command in _bash_:
+You can install the library using the following command in bash:
 
 ```bash
 pip install ffmpeg
@@ -85,10 +85,36 @@ To download the wrapper for more advanced filtering functions:
 pip install ffmpeg-python
 ```
 
-For ease of use, it is also recommended that the repository be cloned using the following _bash_ command:
+For ease of use, it is also recommended that the repository be cloned using the following bash command:
 
 ```bash
 git clone https://github.com/srikanthashish/meditation-visuals.git
 ```
+
+## Post-Processing Complete Animations of Sessions & Concluding Thoughts
+
+Once the dynamic visuals are generated for each of the nine sessions, it can be exciting to look at them side by side! 
+
+After navigating to the <code>meditation-visuals/</code> on your computer, run the <code>3x3_tiling.sh</code> bash script:
+
+```bash
+bash 3x3_tiling.sh
+```
+
+This will produce four (4) additional figures in the following order: 
+1. a 3x3 tiling of the nine 6 fps animated visuals (in MP4 format), 
+2. a 3x3 tiling of the nine 6 fps animated visuals (in GIF format; refer to **Figure 2.**), 
+3. a 3x3 tiling of the nine 1 fps animated visuals WITHOUT the 5-minute-long meditation audio track (in MP4 format), and
+4. a 3x3 tiling of the nine 1 fps animated visuals WITH the 5-minute-long meditation audio track (in MP4 format) 
+
+<p align="center">
+  <img src="demo_figs/med_rec_complete_animated_6_fps_DEMO.gif" alt="" width=300 height=300/>
+</p>
+
+<i>**Figure 1.** 6 FPS GIF animation of the first few seconds of a meditation visual, generated using demo data.</i>
+
+To conclude, this activty is intended to be a valuable exercise in the processing and visualization of EEG data. By leveraging various libraries in R and bash programming, we can load data recorded in Microsoft Excel format, create frames for second-by-second meditation activity, and compile them into a fun animated visual!
+
+If you have any questions or comments, please feel free to [reach out to me](https://cirvmwr2x1o.typeform.com/to/iYZbtN9F).
 
 ![footer02](https://user-images.githubusercontent.com/29677962/231235142-65a6eadb-0b17-4daf-bc56-bd31934acf67.png)
