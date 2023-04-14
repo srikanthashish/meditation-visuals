@@ -95,23 +95,23 @@ git clone https://github.com/srikanthashish/meditation-visuals.git
 
 Once the dynamic visuals are generated for each of the nine sessions, it can be exciting to look at them side by side! 
 
-After navigating to the <code>meditation-visuals/</code> on your computer, run the <code>3x3_tiling.sh</code> bash script:
+After navigating to the <code>meditation-visuals/</code> on your computer, run the <code>3 × 3_tiling.sh</code> bash script:
 
 ```bash
 bash 3x3_tiling.sh
 ```
 
 This will produce four (4) additional figures in the following order: 
-1. a 3x3 tiling of the nine 6 fps animated visuals (in MP4 format), 
-2. a 3x3 tiling of the nine 6 fps animated visuals (in GIF format; refer to **Figure 2.**), 
-3. a 3x3 tiling of the nine 1 fps animated visuals WITHOUT the 5-minute-long meditation audio track (in MP4 format), and
-4. a 3x3 tiling of the nine 1 fps animated visuals WITH the 5-minute-long meditation audio track (in MP4 format) 
+1. a 3 × 3 tiling of the nine 6 fps animated visuals (in MP4 format), 
+2. a 3 × 3 tiling of the nine 6 fps animated visuals (in GIF format; refer to **Figure 2.**), 
+3. a 3 × 3 tiling of the nine 1 fps animated visuals WITHOUT the 5-minute-long meditation audio track (in MP4 format), and
+4. a 3 × 3 tiling of the nine 1 fps animated visuals WITH the 5-minute-long meditation audio track (in MP4 format) 
 
 <p align="center">
   <img src="demo_figs/med_rec_complete_animated_6_fps_DEMO.gif" alt="" width=300 height=300/>
 </p>
 
-<i>**Figure 1.** 6 FPS GIF animation of the first few seconds of a meditation visual, generated using demo data.</i>
+<i>**Figure 2.** 6 FPS GIF animation of the first few seconds of a 3 × 3 tiling meditation visual, generated using demo data.</i>
 
 To conclude, this activty is intended to be a valuable exercise in the processing and visualization of EEG data. By leveraging various libraries in R and bash programming, we can load data recorded in Microsoft Excel format, create frames for second-by-second meditation activity, and compile them into a fun animated visual!
 
