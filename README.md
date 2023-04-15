@@ -49,7 +49,7 @@ Note that both scripts loop through the predefined list of filenames to process 
 Each script is executed to generate a sequence of single frame images, with each frame corresponding to a second of activity recorded. The frames were annotated with various recording metrics, including frame number, as well as an inverse visual representation of pre-calculated meditation scores. Specifically, squares are drawn within each frame, with larger squares corresponding to lower scores and smaller squares to higher scores (refer to **Figure 1.**). These frames were subsequently arranged in sequential order and used to create animations in [MP4](https://en.wikipedia.org/wiki/MP4_file_format) coding format. 
 
 <p align="center">
-  <img src="demo_figs/med_rec_complete_ses-01_animated_6_fps_DEMO.gif" alt="" width=500 height=500/>
+  <img src="demo_figs/med_rec_complete_ses-01_animated_6_fps_DEMO.gif" alt="" width=250 height=250/>
 </p>
 
 <i>**Figure 1.** 6 FPS GIF animation of minute 1 of a meditation visual, generated using demo data. View the [demo_figs/](demo_figs) folder for more example GIF animations.</i>
@@ -110,7 +110,7 @@ This will produce four (4) additional files in the following order (examples of 
 4. A 3 × 3 tiling of the nine 1 fps animated visuals __WITH__ the 5-minute-long meditation audio track (in MP4 format) 
 
 <p align="center">
-  <img src="demo_figs/med_rec_complete_animated_6_fps_DEMO.gif" alt="" width=500 height=500/>
+  <img src="demo_figs/med_rec_complete_animated_6_fps_DEMO.gif" alt="" width=250 height=250/>
 </p>
 
 <i>**Figure 2.** 6 FPS GIF animation of the first 36 seconds of a 3 × 3 tiling meditation visual, generated using demo data.</i>
