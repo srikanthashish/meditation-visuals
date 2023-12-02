@@ -117,7 +117,7 @@ This will produce four (4) additional files in the following order (examples of 
 
 ## Concluding Thoughts
 
-To conclude, this activty is intended to be a valuable exercise in the processing and visualization of EEG data. By leveraging various libraries in R and bash programming, we can load data recorded in Microsoft Excel format, create frames for second-by-second meditation activity, and compile them into a fun animated visual!
+To conclude, this activity is intended to be a valuable exercise in the processing and visualization of EEG data. By leveraging various libraries in R and bash programming, we can load data recorded in Microsoft Excel format, create frames for second-by-second meditation activity, and compile them into a fun animated visual!
 
 If you have any questions or comments, please feel free to [reach out to me](https://cirvmwr2x1o.typeform.com/to/iYZbtN9F).
 
