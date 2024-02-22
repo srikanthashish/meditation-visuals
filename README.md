@@ -11,17 +11,17 @@ Default 'output.xlsx' files were renamed according to a convention with the form
 
 </tabcaption>
 
-session	      | filename
-:-------------|:-------------
-1	            | 2023-04-14_ses-01
-2	            | 2023-04-14_ses-02
-3	            | 2023-04-14_ses-03
-4	            | 2023-04-14_ses-04
-5	            | 2023-04-14_ses-05
-6	            | 2023-04-14_ses-06
-7	            | 2023-04-14_ses-07
-8	            | 2023-04-14_ses-08
-9	            | 2023-04-14_ses-09
+| session      | filename           |
+|:-------------|:-------------------|
+| 1            | 2023-04-14_ses-01  |
+| 2            | 2023-04-14_ses-02  |
+| 3            | 2023-04-14_ses-03  |
+| 4            | 2023-04-14_ses-04  |
+| 5            | 2023-04-14_ses-05  |
+| 6            | 2023-04-14_ses-06  |
+| 7            | 2023-04-14_ses-07  |
+| 8            | 2023-04-14_ses-08  |
+| 9            | 2023-04-14_ses-09  |
 
 The EEG recordings consist of 5-minute-long deep meditation sessions, including columns for raw EEG scores, alpha, delta, gamma, low beta, high beta, and theta values, as well as pre-calculated attention and meditation scores (refer to **Table 2.**). These pre-calculated scores exist on separate 0-100 indices (0 = _very_ low and 100 = _very_ high), representing the corresponding cognitive states' levels.
 
