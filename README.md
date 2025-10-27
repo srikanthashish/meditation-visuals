@@ -121,4 +121,4 @@ To conclude, this activity is intended to be a valuable exercise in the processi
 
 If you have any questions or comments, please feel free to [reach out to me](https://cirvmwr2x1o.typeform.com/to/iYZbtN9F).
 
-![footer02](https://user-images.githubusercontent.com/29677962/231235142-65a6eadb-0b17-4daf-bc56-bd31934acf67.png)
+<img width="2500" height="200" alt="image" src="https://github.com/user-attachments/assets/80510f65-93d1-4a3b-a5ed-5b4325f25974" />
